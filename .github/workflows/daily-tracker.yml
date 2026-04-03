@@ -1,0 +1,63 @@
+name: 📓 Daily Dev Tracker
+
+on:
+  # Fired by other repos via webhook when they get a push
+  repository_dispatch:
+    types: [new_commit]
+
+  # Fallback: nightly summary at 11:30 PM IST (18:00 UTC)
+  schedule:
+    - cron: "0 18 * * *"
+
+  # Manual trigger for testing
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  track-activity:
+    runs-on: ubuntu-latest
+    name: Aggregate commits → update dev journal
+
+    steps:
+      - name: ⬇️ Checkout tracker repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 📦 Install dependencies
+        run: pip install requests python-dateutil
+
+      - name: 🔍 Fetch today's commits & generate log
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_USERNAME: ${{ secrets.GH_USERNAME }}
+          # Passed in from the dispatching repo (may be empty on cron)
+          TRIGGER_REPO: ${{ github.event.client_payload.repo }}
+          TRIGGER_SHA: ${{ github.event.client_payload.sha }}
+          TRIGGER_MESSAGE: ${{ github.event.client_payload.message }}
+          TRIGGER_AUTHOR: ${{ github.event.client_payload.author }}
+          TRIGGER_TIMESTAMP: ${{ github.event.client_payload.timestamp }}
+        run: python scripts/generate_log.py
+
+      - name: 🔧 Configure git
+        run: |
+          git config user.name "${{ secrets.GH_USERNAME }}"
+          git config user.email "${{ secrets.GH_EMAIL }}"
+
+      - name: 📤 Commit updated dev log
+        run: |
+          git add .
+          if ! git diff --cached --quiet; then
+            git commit -m "$(cat /tmp/commit_msg.txt)"
+            git push
+          else
+            echo "ℹ️ Log already up to date."
+          fi
