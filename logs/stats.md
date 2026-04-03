@@ -4,13 +4,25 @@
 
 | Metric | Value |
 |--------|-------|
-| 🔥 Current Streak | **0 day(s)** |
-| 📦 Total Commits Logged | **0** |
-| 📅 Active Days | **0** |
-| 📈 Avg Commits/Day | **0** |
-| 🏆 Most Active Day | — |
-| 🗂️ Projects Touched | **0** |
+| 🔥 Current Streak | **1 day(s)** |
+| 📦 Total Commits Logged | **14** |
+| 📅 Active Days | **1** |
+| 📈 Avg Commits/Day | **14.0** |
+| 🏆 Most Active Day | **2026-04-03** (14 commits) |
+| 🗂️ Projects Touched | **11** |
 
 ## Projects
 
-_No projects tracked yet. Push a commit to get started!_
+- AgriCert
+- arovia-platform
+- Attendify
+- build-with-ai-hackcrux-2026
+- CareerLY
+- DSA / Competitive Programming
+- COS — Cognitive Operating System
+- HackCuz-App
+- Jarvis — AI Voice Assistant
+- LifeLens AI
+- Portfolio
+
+_Last updated: 03 Apr 2026, 10:11 AM IST_
