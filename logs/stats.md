@@ -6,8 +6,8 @@
 |--------|-------|
 | 🔥 Current Streak | **1 day(s)** |
 | 📦 Total Commits Logged | **52** |
-| 📅 Active Days | **4** |
-| 📈 Avg Commits/Day | **13.0** |
+| 📅 Active Days | **5** |
+| 📈 Avg Commits/Day | **10.4** |
 | 🏆 Most Active Day | **2026-04-03** (16 commits) |
 | 🗂️ Projects Touched | **13** |
 
@@ -27,4 +27,4 @@
 - India_Pin_Code_Checker
 - ARKIS_AI
 
-_Last updated: 06 Apr 2026, 12:21 PM IST_
+_Last updated: 07 Apr 2026, 12:19 AM IST_
