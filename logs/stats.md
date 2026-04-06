@@ -4,12 +4,12 @@
 
 | Metric | Value |
 |--------|-------|
-| 🔥 Current Streak | **1 day(s)** |
-| 📦 Total Commits Logged | **47** |
+| 🔥 Current Streak | **2 day(s)** |
+| 📦 Total Commits Logged | **49** |
 | 📅 Active Days | **4** |
-| 📈 Avg Commits/Day | **11.8** |
+| 📈 Avg Commits/Day | **12.2** |
 | 🏆 Most Active Day | **2026-04-03** (16 commits) |
-| 🗂️ Projects Touched | **12** |
+| 🗂️ Projects Touched | **13** |
 
 ## Projects
 
@@ -25,5 +25,6 @@
 - LifeLens AI
 - Portfolio
 - India_Pin_Code_Checker
+- ARKIS_AI
 
-_Last updated: 06 Apr 2026, 12:04 AM IST_
+_Last updated: 06 Apr 2026, 11:56 AM IST_
