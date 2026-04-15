@@ -5,11 +5,11 @@
 | Metric | Value |
 |--------|-------|
 | 🔥 Current Streak | **1 day(s)** |
-| 📦 Total Commits Logged | **99** |
+| 📦 Total Commits Logged | **109** |
 | 📅 Active Days | **13** |
-| 📈 Avg Commits/Day | **7.6** |
+| 📈 Avg Commits/Day | **8.4** |
 | 🏆 Most Active Day | **2026-04-11** (19 commits) |
-| 🗂️ Projects Touched | **13** |
+| 🗂️ Projects Touched | **14** |
 
 ## Projects
 
@@ -26,5 +26,6 @@
 - Portfolio
 - India_Pin_Code_Checker
 - ARKIS_AI
+- medclear
 
-_Last updated: 15 Apr 2026, 12:34 AM IST_
+_Last updated: 15 Apr 2026, 01:44 PM IST_
